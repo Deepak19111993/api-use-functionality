@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      font-size: 25px;
+    }
+    .navbar {
+      a {
+        text-decoration: none;
+        color: #333;
+        text-transform: capitalize;
+        cursor: pointer !important;
+        transition: 0.2s all ease-in-out;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        &.active {
+          color: orange;
+          text-shadow: 0 0 0 orange;
+        }
+      }
+    }
+  }
+}

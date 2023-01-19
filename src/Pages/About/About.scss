@@ -1,0 +1,76 @@
+.curd-opration {
+  padding: 50px 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  .input-val {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    input {
+      width: 100%;
+      border: 1px solid #ccc;
+      height: 40px;
+      border-radius: 4px;
+      color: #000;
+      font-size: 16px;
+      outline: none;
+      padding: 0 60px 0 12px;
+
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+    button {
+      border: none;
+      outline: none;
+      background: #000;
+      color: #fff;
+      padding: 0 15px;
+      height: 40px;
+      font-size: 14px;
+      font-weight: 500;
+      position: absolute;
+      right: 0;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer !important;
+    }
+  }
+  .content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      align-items: center;
+      background: #e7e7e7;
+      color: #000;
+      padding: 10px 15px;
+      font-size: 14px;
+      border-radius: 4px;
+      transition: 0.3s all cubic-bezier(0.05, 0.79, 0.82, 0.91);
+      &:not(:last-child) {
+        margin: 0 0 12px;
+      }
+      .btn-wrapper {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        svg,
+        path {
+          cursor: pointer !important;
+        }
+        svg {
+          width: 13px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+.drop-box {
+  padding: 10px !important;
+  // background: #ccc;
+  margin-top: 100px !important;
+  border: 1px solid #ccc;
+}
